@@ -1,0 +1,64 @@
+.conteiner
+{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header1
+{
+    width: 100%;
+    height: 51px;
+    margin: 0 auto;
+    background-color: #F6F8F9;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display:flex;
+
+}
+
+.header1ul
+{
+display: flex;
+margin-left: 1059px;
+gap:31px;
+
+}
+
+.header1li
+{
+font-size: 11px;
+}
+
+/* დასრულდა ჰედერი */
+
+.section1
+{
+    width: 100%;
+    height: 599px;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+}
+
+.section1div1
+{   width:60%;
+    height: 599px;
+    background-image: url(../image/page1pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.section1linkdiv
+{
+
+    width:16%;
+    height: 45px;
+    border: 2px black solid;
+    margin-top: 385px;
+    margin-left: 144px;
+}
