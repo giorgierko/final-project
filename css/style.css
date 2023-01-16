@@ -3,6 +3,8 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    background-color: #F6F8F9;
+   
 }
 
 .header1
@@ -40,6 +42,7 @@ font-size: 11px;
     height: 599px;
     margin: 0 auto;
     display: flex;
+   
     background-color: white;
 }
 
@@ -58,7 +61,213 @@ font-size: 11px;
 
     width:16%;
     height: 45px;
-    border: 2px black solid;
     margin-top: 385px;
     margin-left: 144px;
+}
+
+.section1div2
+{
+    width:40%;
+    height: 599px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.sec1div2div1
+{
+    width: 70%;
+    height: 60px;
+    border: 2px blue solid;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.sec1div2div2
+{
+    width: 70%;
+    height: 300px;
+    border: 2px red solid;
+}
+
+.sec1div2div3
+{   width: 100%;
+    height: 150px;
+    border: 2px gold solid;
+    margin: 0 auto;
+
+}
+
+.sec1div2div4
+{
+    width: 100%;
+    height: 150px;
+    border: 2px green solid;
+    margin: 0 auto;
+}
+
+.sec1div2txt2
+{
+    margin-bottom: 20px;
+}
+
+.sec1div2txt3
+{
+    margin-bottom: 10px;  
+}
+
+.sec1div2txt4 
+{
+    margin-bottom: 30px; 
+}
+
+/* დასრულდა სექცია 1 */
+
+.section2
+{
+    width: 80%;
+    height: 410px;
+    margin: 40px  auto 38px auto;
+    
+
+    
+}
+
+.sec2div1
+{
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.sec2div2
+{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2div123
+{
+   width: 32%; 
+   height: 100%;
+   background-color: white;
+}
+
+.sec2image
+{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 38px;
+    
+}
+
+.sec2div123txt1
+{
+    margin-bottom: 9px;
+    margin-left: 40px;
+}
+
+.sec2div123txt2
+{
+    margin-left: 40px;
+}
+
+/* დასრულდა სექცია2 */
+
+.section3
+{
+    width: 80%;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sec3serTodivi
+{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+   
+    
+}
+
+.sec3div1
+{
+    width:65%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.sec3div1_1
+{
+    width: 100%;
+    height: 430px;
+    background-image: url(../image/sec3pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.sec3div1_2
+{
+    width: 100%;
+    height: 430px;
+    background-image: url(../image/sec3pic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec3div1_1txt1
+{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 232px;
+}
+
+.sec3div1_1txt2
+{
+    margin-left: 40px;
+}
+
+.sec3div1_1txt3
+{
+    margin-left: 40px;
+}
+
+.sec3div2
+{
+    width: 31%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 38px;
+}
+
+.sec3div123
+{
+    width: 100%;
+    height: 300px;
+}
+
+.sec3div2txt
+{
+    margin-top: 48px;
+}
+
+.sec2div2image
+{
+    width: 100%;
 }
