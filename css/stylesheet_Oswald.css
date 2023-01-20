@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Regular.eot');
+    src: url('../font/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Regular.woff2') format('woff2'),
+        url('../font/Oswald-Regular.woff') format('woff'),
+        url('../font/Oswald-Regular.ttf') format('truetype'),
+        url('../font/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

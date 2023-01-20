@@ -1,17 +1,32 @@
+:root 
+{
+
+--tetri: rgb(255, 255, 255);
+--fonti: 20px;
+--Savi:rgb(0, 0, 0); 
+--opasiti: 50%;
+}
+
+
 .conteiner
 {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     background-color: #F6F8F9;
+    position: relative;
    
 }
 
 .header1
 {
-    width: 100%;
+    max-width: inherit;
+    width: inherit;
+    position: fixed;
+    top: 0;
     height: 51px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%);
     background-color: #F6F8F9;
     padding-right: 20px;
     padding-left: 20px;
@@ -19,12 +34,54 @@
     padding-bottom: 18px;
     display:flex;
 
+   
+
 }
+
+.headerlogo
+{
+    background-color:rgb(248, 245, 42);
+    
+    box-shadow: 5px 5px rgb(99, 170, 99);
+    border-radius: 30%;
+    animation: logo;
+    transition: all;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+}
+
+@keyframes logo
+{
+    0% {
+        background-color: rgb(248, 245, 42);
+        opacity: 0;
+    }
+    25% {
+        background-color: rgb(248, 245, 42);
+        opacity: 0.25;
+    }
+    50% {
+        background-color: rgb(248, 245, 42);
+        opacity: 0.5;
+    }
+    75% {
+        background-color: rgb(248, 245, 42);
+        opacity: 0.75;
+    }
+    100% {
+        background-color: rgb(248, 245, 42);
+        opacity: 1;
+    }
+
+ }
+    
+
 
 .header1ul
 {
 display: flex;
-margin-left: 1059px;
+margin-left: 1025px;
 gap:31px;
 
 }
@@ -32,7 +89,21 @@ gap:31px;
 .header1li
 {
 font-size: 11px;
+font-weight: bold;
+opacity: 50%;
+font-family: 'Oswald';
+
 }
+
+.feri
+{
+   
+    opacity: 100%;
+    border-bottom: 3px red solid;
+ 
+}
+
+
 
 /* დასრულდა ჰედერი */
 
@@ -80,7 +151,8 @@ font-size: 11px;
 {
     width: 70%;
     height: 60px;
-    border: 2px blue solid;
+    border:none;
+    border-bottom: 2px #EBEDED solid;
     margin-top: 100px;
     margin-bottom: 80px;
 }
@@ -89,13 +161,13 @@ font-size: 11px;
 {
     width: 70%;
     height: 300px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .sec1div2div3
 {   width: 100%;
     height: 150px;
-    border: 2px gold solid;
+    /* border: 2px gold solid; */
     margin: 0 auto;
 
 }
@@ -104,7 +176,7 @@ font-size: 11px;
 {
     width: 100%;
     height: 150px;
-    border: 2px green solid;
+    /* border: 2px green solid; */
     margin: 0 auto;
 }
 
@@ -121,6 +193,49 @@ font-size: 11px;
 .sec1div2txt4 
 {
     margin-bottom: 30px; 
+}
+
+
+.sec1div2txt1
+{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Oswald';
+
+    
+}
+
+
+.sec1div2txt2
+{
+font-size: 1rem;
+font-weight: bold;
+color:#FA6980;
+font-family: 'Oswald';
+}
+
+.sec1div2txt3
+{
+    font-size: 1rem;
+    font-weight: bold; 
+}
+
+.sec1div2txt4
+{
+  font-size: 1rem;
+  color: #A6ADB4;
+  font-family: 'Roboto';
+}
+
+.sec1div2txt5
+{
+    font-size: 13px;
+    color: #A6ADB4;
+}
+
+.fa-clock
+{
+    color: #CBD0D3;
 }
 
 /* დასრულდა სექცია 1 */
@@ -176,6 +291,31 @@ font-size: 11px;
 }
 
 /* დასრულდა სექცია2 */
+
+
+.sec2div1txt
+{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Oswald';
+
+}
+
+.sec2div123txt1
+{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Oswald'; 
+}
+
+
+.sec2div123txt2
+{
+font-size: 13px;
+color: #A6ADB4;
+font-family: 'Roboto';
+}
+
 
 .section3
 {
@@ -272,6 +412,48 @@ font-size: 11px;
     width: 100%;
 }
 
+
+
+.sec3txt1
+{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Oswald';
+
+}
+
+.sec3div1_1txt1
+{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Oswald';
+}
+
+.sec3div1_1txt2
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Oswald';
+}
+
+
+.sec3div1_1txt3
+{
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Oswald';
+}
+
+.sec3div2txt
+{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family:  'Roboto';
+}
+
 /* დასრულდა სექცია 3 */
 
 .footer1
@@ -281,18 +463,66 @@ font-size: 11px;
     margin: 101px auto auto auto;
     background-color: #A6ADB4;
     padding-top: 54px;
-    padding-left: 145px;
+    padding-left: 142px;
     padding-right: 138px;
     padding-bottom: 61px;
     display: flex;
     justify-content: space-between;
 }
 
-.footertxt1div
-{   width: 27%;
+.logotext
+{
+    width: 27%;
+    height: 86px;
+    border: 2px red solid;
+    display: flex;
+
+}
+
+
+.footerlogo
+
+{
+    width: 25%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.footermenu
+{
+    width: 75%;
+    height: 100%;
+    border: 2px gold solid;
     display: flex;
     justify-content: space-between;
+
+
+
 }
+
+.footerul
+{
+   display: flex;
+   flex-direction: column;
+   gap: 9px;
+}
+
+
+
+.footertxt
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.logotxt
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+
+}
+
 
 
 .footersocialicondiv
@@ -303,3 +533,16 @@ font-size: 11px;
     justify-content: space-between;
 }
 
+.footertxt
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #CBD0D3;
+    font-family: 'Oswald';
+}
+
+
+.tetri
+{
+    color: white;
+}
