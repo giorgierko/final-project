@@ -75,8 +75,64 @@
     }
 
  }
-    
 
+
+ .headerlogodiv
+ {
+    width:38px;
+    height: 15px;
+    border-radius: 30%;
+    background-color: white;
+    animation: logo1;
+    transition: all;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+ }
+ @keyframes logo1
+ {
+    0% {
+        background-color: white;
+        opacity: 1;
+        transform: scaleX(1) scaleY(1); 
+        box-shadow: 10px 10px 80px #FA6980, -10px -10px 80px #FA6980;
+    }
+    25% {
+        background-color: white;
+        opacity: 1;
+        transform: scaleX(1.2) scaleY(1.2); 
+        box-shadow: 7px 7px 80px #FA6980, -7px -7px 80px  #FA6980;
+    }
+    50% {
+        background-color: rgb(233, 230, 87);
+        opacity: 1;
+        transform: scaleX(1.3) scaleY(1.3); 
+        box-shadow: 5px 5px 80px #FA6980, -5px -5px 80px  #FA6980;
+    }
+    75% {
+        background-color: rgb(233, 230, 87);
+        opacity: 1;
+        transform: scaleX(1.4) scaleY(1.sec1div2txt4); 
+        box-shadow: 3px 3px 80px #FA6980, -3px -3px 80px  #FA6980;
+    }
+    100% {
+        background-color: rgb(233, 230, 87);
+        opacity: 1;
+        transform: scaleX(1.5) scaleY(1.5); 
+        box-shadow: 0 0  #FA6980, 0 0  #FA6980;
+        /* border: 3px solid #FA6980;  - ამ კოდზე წარწერა რატომ გადის დივიდან? */
+       }
+
+ }
+
+
+
+    
+.headerlogotxt
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #FA6980;
+}
 
 .header1ul
 {
@@ -99,8 +155,14 @@ font-family: 'Oswald';
 {
    
     opacity: 100%;
-    border-bottom: 3px red solid;
- 
+    
+}
+
+.header1li:hover 
+{
+  border-bottom: 3px red solid;
+  font-size: 13px;
+  /* ერთ li_სთან მიტანისას დანარჩენებმა რომ არ იმოძრაონ როგორ უნდა გავაკეთო? */
 }
 
 
@@ -113,7 +175,6 @@ font-family: 'Oswald';
     height: 599px;
     margin: 0 auto;
     display: flex;
-   
     background-color: white;
 }
 
@@ -134,7 +195,16 @@ font-family: 'Oswald';
     height: 45px;
     margin-top: 385px;
     margin-left: 144px;
+    transition: all;
+    
+  
 }
+
+.section1linkdiv:hover 
+{
+    box-shadow: 10px 10px 50px red, -10px -10px 50px  red;
+}
+
 
 .section1div2
 {
@@ -143,6 +213,7 @@ font-family: 'Oswald';
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     
 }
 
@@ -156,6 +227,8 @@ font-family: 'Oswald';
     margin-top: 100px;
     margin-bottom: 80px;
 }
+
+
 
 .sec1div2div2
 {
@@ -269,6 +342,22 @@ font-family: 'Oswald';
    width: 32%; 
    height: 100%;
    background-color: white;
+}
+
+.sec2imagediv
+{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 40px;
+    border-radius: 5% 5% 5% 5%;
+    overflow: hidden;
+
+}
+
+.sec2imagediv:hover
+{
+    transform: scaleX(2) scaleY(2); 
+    box-shadow: 5px 5px 10px black, -5px -5px 10px  black;
 }
 
 .sec2image
@@ -635,10 +724,17 @@ font-family: 'Roboto';
     height: 40px;
     background-color:  #FA6980;
     border-radius: 20%;
+    border: none;
     color: white;
     font-size: 11px;
     font-weight: bold;
     font-family: 'Oswald';
+}
+
+.batton:hover
+{
+    color: black;
+    box-shadow: 3px 3px 50px #FA6980, -3px -3px 50px  #FA6980;
 }
 
 /* დასრულდა მეორე გვერდის სექცია1 */
@@ -750,4 +846,4 @@ font-family: 'Roboto';
     margin-top: 161px;
 }
 
-/* რომელი მარჯინი მუიშაობს? */
+/* რომელი მარჯინი მუიშაობს? */ 
