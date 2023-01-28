@@ -14,7 +14,9 @@
     width: 100%;
     margin: 0 auto;
     background-color: #F6F8F9;
-    position: relative;
+    padding-top: 58px;
+
+    /* padding-top: 58px; როცა ვუწერ კონტეინერს  ქვევით ჩამოქროლვისას და მერე ზემოთ ასქროლვისას ჰედერი მოძრაობს. ასე უნდა იყოს? */
    
 }
 
@@ -24,26 +26,31 @@
     width: inherit;
     position: fixed;
     top: 0;
-    height: 51px;
+    /* height: 51px; */
     left: 50%;
     transform: translate(-50%);
     background-color: #F6F8F9;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 18px 20px;
     display:flex;
+    justify-content: space-between;
 
    
 
 }
 
+/* .fa-bars {
+    display: none;
+}
+ კომენტარებში გიწერია რომ ეს კოდია შემოსატანი ჰედერის გასტილვასთან ერთად
+ ამ კოდით რას ვაკეთებ? */
+
 .headerlogo
 {
     background-color:rgb(248, 245, 42);
     
-    box-shadow: 5px 5px rgb(99, 170, 99);
+    /* box-shadow: 5px 5px rgb(99, 170, 99); */
     border-radius: 30%;
+    color: #FA6980;
     animation: logo;
     transition: all;
     animation-iteration-count: infinite;
@@ -51,7 +58,7 @@
     
 }
 
-@keyframes logo
+/* @keyframes logo
 {
     0% {
         background-color: rgb(248, 245, 42);
@@ -74,7 +81,7 @@
         opacity: 1;
     }
 
- }
+ } */
 
 
  .headerlogodiv
@@ -119,7 +126,7 @@
         opacity: 1;
         transform: scaleX(1.5) scaleY(1.5); 
         box-shadow: 0 0  #FA6980, 0 0  #FA6980;
-        /* border: 3px solid #FA6980;  - ამ კოდზე წარწერა რატომ გადის დივიდან? */
+        /* ლოგოს დივს იმიტომ ვუკეთებ რომ ანიუმაცია მაქვს მაგაზე გაკეთებული. წავშალო? შეცდმაა? */
        }
 
  }
@@ -127,11 +134,14 @@
 
 
     
-.headerlogotxt
+.headerlogo
 {
     font-size: 13px;
     font-weight: bold;
     color: #FA6980;
+
+    /* ანიმაცია რადგან headerlogodiv _ზე დავტოვე, headerlogo მხოლოდ ამ სტილებს ვუტოვებ. */
+    
 }
 
 .header1ul
@@ -181,28 +191,70 @@ font-family: 'Oswald';
 .section1div1
 {   width:60%;
     height: 599px;
-    background-image: url(../image/page1pic1.png);
+    background-image: url(../image/mtavarifoto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
-.section1linkdiv
-{
-
-    width:16%;
-    height: 45px;
-    margin-top: 385px;
-    margin-left: 144px;
-    transition: all;
+.section1_img_text
+{    width: 80%;
+    border: 2px red solid;
     
-  
 }
 
-.section1linkdiv:hover 
+.section1_title
+{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Oswald';
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 3px white solid;
+    padding-bottom: 40px;
+   
+    
+}
+
+
+
+
+.section1_subtitle
+{
+    font-size: 24px;
+    font-family: 'Oswald';
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.section1_txt
+{
+    font-size: 1rem;
+    font-family: 'Oswald';
+    color: white;
+
+}
+
+
+.linkbutton
+{   width: 20%;
+    height: 40px;
+    background-color:  #FA6980;
+    margin-top: 30px;
+    border-radius: 15%;
+    color: white;
+}
+
+.linkbutton:hover 
 {
     box-shadow: 10px 10px 50px red, -10px -10px 50px  red;
+    cursor: pointer; 
 }
 
 
@@ -210,9 +262,10 @@ font-family: 'Oswald';
 {
     width:40%;
     height: 599px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    padding: 10%;
     
     
 }
@@ -238,10 +291,7 @@ font-family: 'Oswald';
 }
 
 .sec1div2div3
-{   width: 100%;
-    height: 150px;
-    /* border: 2px gold solid; */
-    margin: 0 auto;
+{   margin-bottom: 39px;
 
 }
 
@@ -255,17 +305,29 @@ font-family: 'Oswald';
 
 .sec1div2txt2
 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FA6980;
+    font-family: 'Oswald';
     margin-bottom: 20px;
+
 }
 
 .sec1div2txt3
 {
-    margin-bottom: 10px;  
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
 }
 
 .sec1div2txt4 
 {
-    margin-bottom: 30px; 
+    font-size: 1rem;
+    color: #A6ADB4;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
+
 }
 
 
@@ -274,6 +336,8 @@ font-family: 'Oswald';
     font-size: 22px;
     font-weight: bold;
     font-family: 'Oswald';
+    margin-bottom: 79px;
+
 
     
 }
@@ -316,12 +380,11 @@ font-family: 'Oswald';
 .section2
 {
     width: 80%;
-    height: 410px;
-    margin: 40px  auto 38px auto;
-    
+    margin: 40px  auto 40px auto;
 
-    
 }
+
+
 
 .sec2div1
 {
@@ -342,6 +405,11 @@ font-family: 'Oswald';
    width: 32%; 
    height: 100%;
    background-color: white;
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
 }
 
 .sec2imagediv
@@ -349,44 +417,47 @@ font-family: 'Oswald';
     width: 100%;
     height: 180px;
     margin-bottom: 40px;
-    border-radius: 5% 5% 5% 5%;
+    border-radius: 6px;
     overflow: hidden;
 
 }
 
-.sec2imagediv:hover
+.sec2image:hover
 {
-    transform: scaleX(2) scaleY(2); 
-    box-shadow: 5px 5px 10px black, -5px -5px 10px  black;
+    transform: scale(2);
+    transition: 2s linear;
+    cursor: pointer;
+;
 }
 
 .sec2image
 {
     width: 100%;
-    height: 180px;
-    margin-bottom: 38px;
+    height: 100%;
+    
     
 }
 
 .sec2div123txt1
 {
     margin-bottom: 9px;
-    margin-left: 40px;
+    width: 80%;
+
 }
 
 .sec2div123txt2
 {
-    margin-left: 40px;
+    width: 80%;
 }
 
-/* დასრულდა სექცია2 */
 
 
-.sec2div1txt
+.sec2_title
 {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Oswald';
+    margin-bottom: 40px;
 
 }
 
@@ -394,7 +465,10 @@ font-family: 'Oswald';
 {
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Oswald'; 
+    font-family: 'Oswald';
+    margin-bottom: 9px;
+    width: 80%;
+ 
 }
 
 
@@ -403,26 +477,25 @@ font-family: 'Oswald';
 font-size: 13px;
 color: #A6ADB4;
 font-family: 'Roboto';
+width: 80%;
 }
 
+/* დასრულდა სექცია2 */
 
 .section3
 {
     width: 80%;
-    height: 900px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+
     
 }
 
 .sec3serTodivi
 {
     width: 100%;
-    height: 900px;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    
    
     
 }
@@ -430,17 +503,17 @@ font-family: 'Roboto';
 .sec3div1
 {
     width:65%;
-    height:100%;
+    height:900px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: space-between;
     
 }
 
 .sec3div1_1
 {
     width: 100%;
-    height: 430px;
+    height: 49%;
     background-image: url(../image/sec3pic1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -451,7 +524,7 @@ font-family: 'Roboto';
 .sec3div1_2
 {
     width: 100%;
-    height: 430px;
+    height: 48%;
     background-image: url(../image/sec3pic2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -459,30 +532,44 @@ font-family: 'Roboto';
 }
 
 .sec3div1_1txt1
-{
+{    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Oswald';
     margin-top: 40px;
     margin-left: 40px;
-    margin-bottom: 232px;
+    margin-bottom: 230px;
+
 }
 
 .sec3div1_1txt2
 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Oswald';
     margin-left: 40px;
+
 }
 
 .sec3div1_1txt3
 {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Oswald';
+    margin-top: 10px;
     margin-left: 40px;
+
 }
 
 .sec3div2
 {
-    width: 31%;
-    height: 100%;
+    width: 33%;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    gap: 38px;
+   
 }
 
 .sec3div123
@@ -499,15 +586,19 @@ font-family: 'Roboto';
 .sec3div2image
 {
     width: 100%;
+    height: 210px;
+
 }
 
 
 
-.sec3txt1
+.sec3_title
 {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Oswald';
+    margin-bottom: 40px;
+
 
 }
 
@@ -548,23 +639,18 @@ font-family: 'Roboto';
 .footer1
 {
     width: 100%;
-    height: 201px;
-    margin: 101px auto auto auto;
+   
+    margin-top: 100px;
     background-color: #A6ADB4;
-    padding-top: 54px;
-    padding-left: 142px;
-    padding-right: 138px;
-    padding-bottom: 61px;
+    padding: 55px 10% 61px 10%;
     display: flex;
     justify-content: space-between;
 }
 
 .logotext
 {
-    width: 27%;
-    height: 86px;
-    border: 2px red solid;
     display: flex;
+    gap: 50%;
 
 }
 
@@ -574,26 +660,21 @@ font-family: 'Roboto';
 {
     width: 25%;
     height: 100%;
-    border: 2px solid blue;
+    
 }
 
 .footermenu
 {
-    width: 75%;
-    height: 100%;
-    border: 2px gold solid;
     display: flex;
-    justify-content: space-between;
-
-
-
+    gap: 40%;
 }
 
 .footerul
 {
-   display: flex;
-   flex-direction: column;
-   gap: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
 }
 
 
@@ -602,11 +683,14 @@ font-family: 'Roboto';
 {
     font-size: 13px;
     font-weight: bold;
+    color: #CBD0D3;
+    font-family: 'Oswald';
+
 }
 
 .logotxt
 {
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
 
@@ -616,10 +700,9 @@ font-family: 'Roboto';
 
 .footersocialicondiv
 {
-    width: 12%;
-    height: 16px;
     display: flex;
-    justify-content: space-between;
+    gap: 25%;
+
 }
 
 .footertxt
@@ -639,15 +722,7 @@ font-family: 'Roboto';
 
 /* დასრულდა გვერდი 1 */
 
-.conteiner2
-{
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #F6F8F9;
-    position: relative;
 
-}
 /* 
  ჰედერი დაკოპირებულია გვერდი 1_დან */
 
@@ -655,7 +730,7 @@ font-family: 'Roboto';
 .page2section1
 {
     width: 80%;
-    height: 495px;
+    
     background-color: white;
     margin: 103px  auto auto auto;
     display: flex;
@@ -666,7 +741,7 @@ font-family: 'Roboto';
 .page2section1div1
 {
     width: 50%;
-    height: 100%;
+    height: 500px;
     background-image: url(../image/page2sec1pic1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -688,7 +763,7 @@ font-family: 'Roboto';
 .page2sec1div2
 {
     width: 50%;
-    height: 100%;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -696,34 +771,40 @@ font-family: 'Roboto';
 
 }
 
-.page2div2serch
-{
-
+.form1 {
     width: 70%;
     height: 60%;
     border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* სპეის ბითვინი რატომ არ მუშაობს? */
-    
-    
-    
 }
+
 
 .serchbox
 {
     width: 100%;
     height: 40px;
     margin-top: 10px;
+    border-color: 4px #EBEDED solid;
+    border-radius: 6px;
 
 }
+
+.serchboxtxtx
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Roboto';
+}
+
 
 .batton
 {    width: 30%;
     height: 40px;
     background-color:  #FA6980;
-    border-radius: 20%;
+    border-radius: 6px;
     border: none;
     color: white;
     font-size: 11px;
@@ -748,23 +829,36 @@ font-family: 'Roboto';
     border-bottom: 2px #EBEDED solid;
     border-top: 2px #EBEDED solid;
     margin: 37px auto auto auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     
 }
 
 .avatar
 {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
 
-  
-  
 }
+
+
+.page2sec2_texts {
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid red;
+}
+  
+
 .page2sec2div1
 {
+    width: 30%;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    border: 3px solid red;
+
 }
 
 .page2sec2div23
@@ -785,9 +879,12 @@ font-family: 'Roboto';
 
 .page2sec2tex
 {
+    width: 47%;
     font: 14px;
     color: #A6ADB4;
+    line-height: 23px;
     font-family: 'Oswald';
+
 }
 /* დასრულდა გვერდი 2 სექცია2 */
 
@@ -797,8 +894,7 @@ font-family: 'Roboto';
     height: 830px;
     margin: 40px auto auto auto;
     border-bottom: 2px #EBEDED solid;
-    display: flex;
-    flex-direction: column;
+
 
 
 }
@@ -815,18 +911,15 @@ font-family: 'Roboto';
 
 }
 
-.page2sec3txtdiv
-{
-    width: 100%;
-    height: 330px;
 
-}
 
 .page2sec3txt
 {
     font-size: 14px;
     color: #A6ADB4;
     font-family: 'Roboto';
+    line-height: 23px;
+
 }
 
 .txt1
@@ -841,9 +934,3 @@ font-family: 'Roboto';
 
 /* დასრულდა სექცია 3 */
 
-.footer2
-{
-    margin-top: 161px;
-}
-
-/* რომელი მარჯინი მუიშაობს? */ 
