@@ -6,6 +6,11 @@
         
     }
 
+.fa-bars
+{
+ display: none;
+}
+
     .section1
     {
         
@@ -55,10 +60,7 @@
    
 }
 
-.gasaqrobi
-{
-    display: none;
-}
+
 
 .sec2div123
 

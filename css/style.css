@@ -20,6 +20,11 @@
    
 }
 
+.fa-bars
+{
+ display: none;
+}
+
 .header1
 {
     max-width: inherit;
@@ -38,11 +43,7 @@
 
 }
 
-/* .fa-bars {
-    display: none;
-}
- კომენტარებში გიწერია რომ ეს კოდია შემოსატანი ჰედერის გასტილვასთან ერთად
- ამ კოდით რას ვაკეთებ? */
+
 
 .headerlogo
 {
