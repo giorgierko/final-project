@@ -20,10 +20,7 @@
    
 }
 
-.fa-bars
-{
- display: none;
-}
+
 
 .header1
 {
@@ -43,6 +40,10 @@
 
 }
 
+/* .fa-bars
+{
+ display: none;
+} */
 
 
 .headerlogo
@@ -205,7 +206,7 @@ font-family: 'Oswald';
 
 .section1_img_text
 {    width: 80%;
-    border: 2px red solid;
+     border: 2px red solid;
     
 }
 
@@ -332,6 +333,8 @@ font-family: 'Oswald';
     font-size: 22px;
     font-weight: bold;
     font-family: 'Oswald';
+    border-bottom: 3px #EBEDED solid;
+    padding-bottom: 40px;
     margin-bottom: 79px;
 
 
@@ -382,11 +385,7 @@ font-family: 'Oswald';
 
 
 
-.sec2div1
-{
-    width: 100%;
-    margin-bottom: 42px;
-}
+
 
 .sec2div2
 {
@@ -553,7 +552,7 @@ width: 80%;
     font-size: 1rem;
     color: white;
     font-family: 'Oswald';
-    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 40px;
 
 }
@@ -572,6 +571,7 @@ width: 80%;
 {
     width: 100%;
     height: 300px;
+    
 }
 
 .sec3div2txt
@@ -751,6 +751,7 @@ width: 80%;
 {
     font-size: 30px;
     color: white;
+    font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     
@@ -930,7 +931,7 @@ width: 80%;
 
 /* დასრულდა სექცია 3 */
 
-.footer2
+.footer1
 {
     margin-top: 161px;
 }
